@@ -168,14 +168,22 @@ systemctl --user enable --now podman-auto-update.timer
 ```
 
 
-
 ## next steps / TODOs / known issues
 
 - proxy, e.g. nginx
 - allow writing to `import` e.g. via smb
 
 
+## Works with
+
+- Fedora Server 36+
+  - [x] as described
+- Ubuntu Server 22.04+
+  - [x] works with the following changes:
+    - sudo apt install podman -y`
+    - you might start with `bash` after logging into the newly created user (if your prompt looks minimal or `echo $0` says `-sh`) 
 
 # meta information
 
 - tested with `Fedora Server 36` and `podman 4.1.1`
+- tested with `Ubuntu Server 22.04` and `podman 3.4.4`
